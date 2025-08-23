@@ -4,183 +4,328 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Về Chúng Tôi - Xe19</title>
-    <meta name="description" content="Xe19 - Dịch vụ đặt xe tuyến Đoan Hùng - Hà Nội đáng tin cậy, tiện lợi và hiện đại.">
+    <meta name="description" content="Xe19 - Dịch vụ đặt xe tuyến Phú Thọ - Hà Nội đáng tin cậy, tiện lợi và hiện đại.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .about-hero {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 6rem 0 3rem;
-            margin-top: 80px;
-        }
-        
-        .about-content {
-            background: white;
-            padding: 3rem;
-            border-radius: var(--border-radius);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            margin: 2rem 0;
-        }
-        
-        .about-content h2 {
-            color: var(--dark-color);
-            margin-bottom: 1.5rem;
-        }
-        
-        .values-list {
-            list-style: none;
-            margin: 2rem 0;
-        }
-        
-        .values-list li {
-            padding: 1rem 0;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .values-list li:last-child {
-            border-bottom: none;
-        }
-        
-        .values-list strong {
-            color: var(--primary-color);
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-    </style>
 </head>
 <body>
-    <!-- Header -->
+     <!-- Header -->
     <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-info">
+                    <div class="contact-info">
+                        <span class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:0988123456">0988.123.456</a>
+                        </span>
+                        <span class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contact@xe19.vn">contact@xe19.vn</a>
+                        </span>
+                        <span class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Hỗ trợ</span>
+                        </span>
+                    </div>
+                    <div class="header-social">
+                        <a href="https://www.facebook.com/xe19.vn" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://zalo.me/0988123456" target="_blank" class="social-link">
+                            <span class="zalo-icon">Z</span>
+                        </a>
+                        <a href="#" class="download-link">
+                            <i class="fas fa-download"></i>
+                            <span>Tải App</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <nav class="navbar">
             <div class="container">
-                <div class="nav-brand">
-                    <a href="index.html" class="logo">Xe19</a>
+                <div class="nav-content">
+                    <div class="nav-brand">
+                        <a href="index.html" class="logo">
+                            <div class="logo-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-name">Xe19</span>
+                                <span class="logo-tagline">Phú Thọ - Hà Nội</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="nav-center">
+                        <ul class="nav-menu" id="navMenu">
+                            <li><a href="index.html" class="nav-link">Trang Chủ</a></li>
+                            <li><a href="about.html" class="nav-link active">Về Chúng Tôi</a></li>
+                            <li><a href="contact.html" class="nav-link">Liên Hệ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nav-actions">
+                        <a href="tel:0988123456" class="cta-button">
+                            <i class="fas fa-phone"></i>
+                            <span>Đặt Xe Ngay</span>
+                        </a>
+                        <button class="nav-toggle" id="navToggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
-                <button class="nav-toggle" id="navToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="nav-link">Trang Chủ</a></li>
-                    <li><a href="about.html" class="nav-link active">Về Chúng Tôi</a></li>
-                    <li><a href="contact.html" class="nav-link">Liên Hệ</a></li>
-                    <li><a href="tel:0988123456" class="nav-link cta-phone"><i class="fas fa-phone"></i> 0988.123.456</a></li>
-                </ul>
             </div>
         </nav>
     </header>
-
     <!-- About Hero -->
     <section class="about-hero">
         <div class="container">
-            <h1 class="hero-title">Về Xe19 - Kết Nối Những Hành Trình</h1>
-        </div>
-    </section>
-
-    <!-- About Content -->
-    <section class="section">
-        <div class="container">
-            <div class="about-content">
-                <p>Xe19 ra đời với một sứ mệnh đơn giản: mang đến một giải pháp di chuyển đáng tin cậy, tiện lợi và hiện đại cho người dân trên tuyến đường Đoan Hùng - Hà Nội. Chúng tôi hiểu rằng mỗi chuyến đi không chỉ là sự dịch chuyển từ điểm A đến điểm B, mà còn là một phần trải nghiệm trong cuộc sống của quý khách.</p>
-                
-                <p>Bắt đầu từ những chiếc xe 4 chỗ và 7 chỗ đầu tiên, chúng tôi đã không ngừng nỗ lực cải tiến chất lượng dịch vụ. Việc ra mắt ứng dụng di động Xe19 là một bước tiến quan trọng, giúp khách hàng hoàn toàn chủ động trong việc đặt xe, thay thế cho phương thức gọi điện truyền thống.</p>
-                
-                <h2>Giá trị cốt lõi của chúng tôi:</h2>
-                
-                <ul class="values-list">
-                    <li>
-                        <strong>An Toàn Là Trên Hết</strong>
-                        Toàn bộ phương tiện và tài xế đều tuân thủ các tiêu chuẩn an toàn cao nhất. Xe được kiểm tra định kỳ, tài xế được đào tạo chuyên nghiệp.
-                    </li>
-                    <li>
-                        <strong>Khách Hàng Là Trọng Tâm</strong>
-                        Mọi cải tiến đều xuất phát từ nhu cầu và mong muốn của khách hàng. Chúng tôi lắng nghe và không ngừng hoàn thiện dịch vụ.
-                    </li>
-                    <li>
-                        <strong>Công Nghệ Để Phục Vụ</strong>
-                        Ứng dụng công nghệ để quy trình trở nên đơn giản và minh bạch hơn. Đặt xe dễ dàng, theo dõi hành trình realtime.
-                    </li>
-                    <li>
-                        <strong>Minh Bạch Và Tin Cậy</strong>
-                        Giá cước rõ ràng, không phát sinh. Cam kết đúng giờ, đúng tuyến đường đã thỏa thuận.
-                    </li>
-                </ul>
-                
-                <h2>Tầm nhìn và sứ mệnh:</h2>
-                <p>Xe19 hướng tới việc trở thành nền tảng vận chuyển hàng đầu tuyến Đoan Hùng - Hà Nội, mang đến trải nghiệm di chuyển tốt nhất cho mọi khách hàng. Chúng tôi không chỉ cung cấp dịch vụ vận chuyển mà còn xây dựng cầu nối tin cậy giữa hai vùng đất.</p>
-                
-                <p>Với đội ngũ tài xế giàu kinh nghiệm, am hiểu địa phương và luôn tận tâm phục vụ, Xe19 cam kết mang đến cho bạn những chuyến đi an toàn, thoải mái và đáng nhớ.</p>
-                
-                <p><strong>Cảm ơn bạn đã tin tưởng và lựa chọn Xe19. Chúc bạn có những chuyến đi thượng lộ bình an!</strong></p>
+            <div class="hero-content-wrapper">
+                <h1 class="hero-title">Về Xe19 - Kết Nối Phú Thọ - Hà Nội</h1>
+                <p class="hero-subtitle">Hành trình kết nối ước mơ và cơ hội</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Main About Content -->
+    <section class="about-main">
+        <div class="container">
+            <!-- Introduction Section -->
+            <div class="intro-section">
+                <div class="intro-text">
+                    <h2 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 1.5rem;">Câu Chuyện Của Chúng Tôi</h2>
+                    <p style="margin-bottom: 1.5rem;">Xe19 ra đời với sứ mệnh kết nối Phú Thọ với thủ đô Hà Nội một cách an toàn, tiện lợi và hiện đại. Chúng tôi hiểu rằng mỗi chuyến đi không chỉ là việc di chuyển đơn thuần, mà còn là cầu nối giữa những ước mơ, cơ hội và những người thân yêu.</p>
+                    
+                    <p>Với kinh nghiệm nhiều năm phục vụ tuyến Phú Thọ - Hà Nội, chúng tôi đã xây dựng được một mạng lưới dịch vụ đáng tin cậy. Việc ra mắt ứng dụng di động Xe19 đã mang lại sự thay đổi tích cực, giúp khách hàng chủ động hơn trong việc đặt xe và quản lý chuyến đi.</p>
+                </div>
+                <div class="intro-visual">
+                    <div class="visual-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="visual-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Chuyến đi/tháng</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">99%</span>
+                            <span class="stat-label">Hài lòng</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Hỗ trợ</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5★</span>
+                            <span class="stat-label">Đánh giá</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Values Timeline -->
+            <div class="values-section">
+                <h2 class="section-title">Cam kết của chúng tôi</h2>
+                <div class="values-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">An Toàn Là Trên Hết</h3>
+                            <p class="timeline-text">Toàn bộ phương tiện và tài xế đều tuân thủ các tiêu chuẩn an toàn cao nhất. Xe được kiểm tra định kỳ, tài xế được đào tạo chuyên nghiệp.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Khách Hàng Là Trọng Tâm</h3>
+                            <p class="timeline-text">Mọi cải tiến đều xuất phát từ nhu cầu và mong muốn của khách hàng. Chúng tôi lắng nghe và không ngừng hoàn thiện dịch vụ.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Công Nghệ Để Phục Vụ</h3>
+                            <p class="timeline-text">Ứng dụng công nghệ để quy trình trở nên đơn giản và minh bạch hơn. Đặt xe dễ dàng, theo dõi hành trình realtime.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Minh Bạch Và Tin Cậy</h3>
+                            <p class="timeline-text">Giá cước rõ ràng, không phát sinh. Cam kết đúng giờ, đúng tuyến đường đã thỏa thuận.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission & Vision Cards -->
+            <div class="mission-vision">
+                <div class="mission-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="card-title">Sứ Mệnh</h3>
+                    <p>Xe19 hướng tới việc trở thành nền tảng vận chuyển hàng đầu tuyến Phú Thọ - Hà Nội, mang đến trải nghiệm di chuyển hiện đại và đáng tin cậy cho mọi khách hàng. Chúng tôi không chỉ là dịch vụ vận chuyển mà còn là cầu nối kết nối con người và cơ hội.</p>
+                </div>
+                
+                <div class="vision-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="card-title">Tầm Nhìn</h3>
+                    <p>Với đội ngũ tài xế chuyên nghiệp, thân thiện và am hiểu tuyến đường, Xe19 cam kết mang đến cho bạn những chuyến đi an toàn, thoải mái và đúng giờ nhất. Chúng tôi hiểu rằng thời gian của bạn rất quý báu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing Message -->
+    <section class="closing-message">
+        <div class="container">
+            <div class="closing-content">
+                <h2 class="closing-title">Cảm Ơn Sự Tin Tưởng Của Bạn</h2>
+                <p class="closing-text"><strong>Cảm ơn bạn đã tin tưởng và lựa chọn Xe19. Hãy để chúng tôi đồng hành cùng bạn trên mọi hành trình!</strong></p>
+            </div>
+        </div>
+    </section>
+
+           <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3 class="footer-logo">Xe19</h3>
-                    <p>Dịch vụ đặt xe tuyến Đoan Hùng - Hà Nội. An toàn - Tiện lợi - Hiện đại.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Về Công Ty</h4>
-                    <ul>
-                        <li><a href="about.html">Về Chúng Tôi</a></li>
-                        <li><a href="contact.html">Liên Hệ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Chính Sách</h4>
-                    <ul>
-                        <li><a href="privacy.html">Chính Sách Bảo Mật</a></li>
-                        <li><a href="terms.html">Điều Khoản Sử Dụng</a></li>
-                        <li><a href="delete-account.html">Xóa Tài Khoản</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Tải Ứng Dụng</h4>
-                    <div class="footer-apps">
-                        <div class="qr-code">
-                            <div style="width: 80px; height: 80px; background: white; border: 2px dashed #6b7280; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                                <img src="./images/QR.png" alt="QR Code" />
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Company Info -->
+                    <div class="footer-company">
+                        <div class="footer-logo-section">
+                            <div class="footer-logo">
+                                <div class="logo-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="logo-text">
+                                    <h3>Xe19</h3>
+                                    <p>Kết nối Phú Thọ - Hà Nội</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="app-buttons">
-                            <svg width="160" height="80" viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg">
-                                <a href="https://play.google.com/store/apps" target="_blank">
-                                    <g>
-                                        <rect x="0" y="10" rx="10" ry="10" width="160" height="60" fill="black" />
-                                        <image x="15" y="25" width="30" height="30" href="./images/ch-play.webp"/>
-                                        <text x="50" y="35" font-size="10" fill="white" font-family="Arial" font-weight="bold">Tải về trên</text>
-                                        <text x="50" y="53" font-size="16" fill="white" font-family="Arial">Google Play</text>
-                                    </g>
-                                </a>
-                            </svg>
-
-                            <svg width="160" height="80" viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg">
-                                <a href="https://apps.apple.com/vn/app" target="_blank">
-                                    <g>
-                                        <rect x="0" y="10" rx="10" ry="10" width="160" height="60" fill="black" />
-                                        <image x="15" y="25" width="30" height="30" href="./images/apple-logo-white.png"/>
-                                        <text x="50" y="35" font-size="10" fill="white" font-family="Arial" font-weight="bold">Tải về trên</text>
-                                        <text x="50" y="53" font-size="16" fill="white" font-family="Arial">App Store</text>
-                                    </g>
-                                </a>
-                            </svg>
+                        <p class="company-desc">Dịch vụ đặt xe hàng đầu tuyến Phú Thọ - Hà Nội. Cam kết an toàn, tiện lợi và hiện đại với đội ngũ tài xế chuyên nghiệp.</p>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="footer-links">
+                        <h4>Liên Kết Nhanh</h4>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-home"></i> Trang Chủ</a></li>
+                            <li><a href="about.html"><i class="fas fa-info-circle"></i> Về Chúng Tôi</a></li>
+                            <li><a href="contact.html"><i class="fas fa-envelope"></i> Liên Hệ</a></li>
+                            <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> Chính Sách Bảo Mật</a></li>
+                            <li><a href="terms.html"><i class="fas fa-file-contract"></i> Điều Khoản Sử Dụng</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="footer-contact">
+                        <h4>Thông Tin Liên Hệ</h4>
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="contact-details">
+                                    <span class="contact-label">Hotline 24/7</span>
+                                    <a href="tel:0988123456" class="contact-value">0988.123.456</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-details">
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:contact@xe19.vn" class="contact-value">contact@xe19.vn</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="contact-details">
+                                    <span class="contact-label">Tuyến hoạt động</span>
+                                    <span class="contact-value">Phú Thọ ⇄ Hà Nội</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/xe19.vn" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="https://zalo.me/0988123456" target="_blank" aria-label="Zalo">Z</a>
+                    
+                    <!-- App Download -->
+                    <div class="footer-download">
+                        <h4>Tải Ứng Dụng</h4>
+                        <p class="download-desc">Đặt xe nhanh chóng và tiện lợi</p>
+                        
+                        <div class="download-options">
+                            <div class="qr-section">
+                                <div class="qr-code">
+                                    <img src="./images/QR.png" alt="QR Code" />
+                                </div>
+                                <span class="qr-label">Quét mã QR</span>
+                            </div>
+                            
+                            <div class="store-buttons">
+                                <a href="https://play.google.com/store/apps" target="_blank" class="store-btn">
+                                    <i class="fab fa-google-play"></i>
+                                    <div class="btn-text">
+                                        <span class="btn-small">Tải về trên</span>
+                                        <span class="btn-large">Google Play</span>
+                                    </div>
+                                </a>
+                                
+                                <a href="https://apps.apple.com/vn/app" target="_blank" class="store-btn">
+                                    <i class="fab fa-apple"></i>
+                                    <div class="btn-text">
+                                        <span class="btn-small">Tải về trên</span>
+                                        <span class="btn-large">App Store</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="social-section">
+                            <span class="social-label">Theo dõi chúng tôi:</span>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/xe19.vn" target="_blank" class="social-link facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://zalo.me/0988123456" target="_blank" class="social-link zalo">
+                                    <span class="zalo-icon">Z</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>Bản quyền © 2025 Xe19. Đã đăng ký bản quyền.</p>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2025 Xe19. Tất cả quyền được bảo lưu.</p>
+                    </div>
+                    <div class="footer-bottom-links">
+                        <a href="privacy.html">Chính sách bảo mật</a>
+                        <a href="terms.html">Điều khoản sử dụng</a>
+                        <a href="delete-account.html">Xóa tài khoản</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
