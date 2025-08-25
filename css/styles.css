@@ -7,10 +7,10 @@
 
 /* CSS Variables */
 :root {
-  --primary-color: #1e40af;
-  --secondary-color: #3b82f6;
-  --accent-color: #60a5fa;
-  --light-blue: #dbeafe;
+  --primary-color: #166534; /* Xanh đậm chủ đạo từ logo */
+  --secondary-color: #16a34a; /* Xanh trung bình */
+  --accent-color: #84cc16; /* Xanh lá cây sáng từ logo */
+  --light-green: #dcfce7; /* Xanh nhạt thay thế light-blue */
   --text-color: #374151;
   --dark-color: #111827;
   --light-color: #f8fafc;
@@ -21,17 +21,17 @@
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
   --gradient-primary: linear-gradient(
     135deg,
-    #1e40af 0%,
-    #3b82f6 50%,
-    #60a5fa 100%
+    #166534 0%,
+    #16a34a 50%,
+    #84cc16 100%
   );
-  --gradient-secondary: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  --gradient-secondary: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
   --gradient-hero: linear-gradient(
     135deg,
-    #1e3a8a 0%,
-    #1e40af 25%,
-    #3b82f6 75%,
-    #60a5fa 100%
+    #14532d 0%,
+    #166534 25%,
+    #16a34a 75%,
+    #84cc16 100%
   );
 }
 
@@ -133,7 +133,7 @@ body {
 }
 
 .info-item i {
-  color: var(--accent-color);
+  color: white;
   font-size: 0.9rem;
 }
 
@@ -217,15 +217,17 @@ body {
 }
 
 .logo-icon {
-  width: 50px;
-  height: 50px;
-  background: var(--gradient-primary);
-  color: white;
-  border-radius: 50%;
+  width: 120px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+}
+
+.logo-icon .logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .logo-text {
@@ -513,7 +515,7 @@ body {
 }
 
 .feature-item i {
-  color: #10b981;
+  color: #16a34a;
   font-size: 1.2rem;
   width: 20px;
 }
@@ -588,10 +590,10 @@ body {
 
 .phone-button i {
   font-size: 1.5rem;
-  color: #10b981;
+  color: #16a34a;
   width: 40px;
   height: 40px;
-  background: rgba(16, 185, 129, 0.2);
+  background: rgba(22, 163, 74, 0.2);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -800,7 +802,7 @@ body {
 }
 
 .route-point.start i {
-  color: #10b981;
+  color: #16a34a;
 }
 
 .route-point.end i {
@@ -810,7 +812,7 @@ body {
 .route-line {
   width: 2px;
   height: 30px;
-  background: linear-gradient(to bottom, #10b981, var(--primary-color));
+  background: linear-gradient(to bottom, #16a34a, var(--primary-color));
   margin-left: 0.5rem;
   border-radius: 1px;
 }
@@ -1386,7 +1388,7 @@ body {
   align-items: center;
   gap: 0.8rem;
   padding: 0.8rem;
-  background: var(--light-blue);
+  background: var(--light-green);
   border-radius: 8px;
   font-size: 0.9rem;
 }
@@ -1471,21 +1473,23 @@ body {
 }
 
 .footer-logo .logo-icon {
-  width: 50px;
+  width: 100px;
   height: 50px;
-  background: var(--gradient-primary);
-  color: white;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+}
+
+.footer-logo .logo-icon .logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .footer-logo .logo-text h3 {
   font-size: 1.8rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #60a5fa 0%, #93c5fd 100%);
+  background: linear-gradient(135deg, #84cc16 0%, #16a34a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1887,12 +1891,9 @@ body {
     border-radius: 20px;
   }
 
-  .logo-name {
-    font-size: 1.3rem; /* Giảm size logo */
-  }
-
-  .logo-tagline {
-    font-size: 0.7rem; /* Giảm tagline */
+  .logo-icon {
+    width: 100px; /* Giảm size logo cho mobile */
+    height: 50px;
   }
 
   .nav-menu {
@@ -2268,10 +2269,10 @@ body {
 .about-hero {
   background: linear-gradient(
     135deg,
-    #1e3a8a 0%,
-    #1e40af 25%,
-    #3b82f6 75%,
-    #60a5fa 100%
+    #14532d 0%,
+    #166534 25%,
+    #16a34a 75%,
+    #84cc16 100%
   );
   color: white;
   padding: 8rem 0 4rem;
@@ -2572,7 +2573,7 @@ body {
   left: 0;
   right: 0;
   height: 5px;
-  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  background: linear-gradient(135deg, #166534 0%, #16a34a 100%);
 }
 
 .vision-card::before {
@@ -2582,7 +2583,7 @@ body {
   left: 0;
   right: 0;
   height: 5px;
-  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  background: linear-gradient(135deg, #84cc16 0%, #65a30d 100%);
 }
 
 .card-icon {
@@ -2598,11 +2599,11 @@ body {
 }
 
 .mission-card .card-icon {
-  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  background: linear-gradient(135deg, #166534 0%, #16a34a 100%);
 }
 
 .vision-card .card-icon {
-  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  background: linear-gradient(135deg, #84cc16 0%, #65a30d 100%);
 }
 
 .card-title {
@@ -2707,10 +2708,10 @@ body {
 .contact-hero {
   background: linear-gradient(
     135deg,
-    #1e3a8a 0%,
-    #1e40af 25%,
-    #3b82f6 75%,
-    #60a5fa 100%
+    #14532d 0%,
+    #166534 25%,
+    #16a34a 75%,
+    #84cc16 100%
   );
   color: white;
   padding: 10rem 0 8rem;
